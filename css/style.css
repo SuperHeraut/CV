@@ -148,11 +148,22 @@ p{
 	height: 10rem;
 }
 .titre{
-	font-size: 3rem;
+	padding: 1rem;
+	box-sizing: border-box;
+}
+#nom,#praenom{
+	font-size: 15vw;
 	font-stretch: semi-condensed;
 	font-weight: 900;
 	text-shadow: #ffffffff 0 0 7px;
 	color: #000000ff;
+}
+#nom{
+	text-align: left;
+}
+#praenom{
+	text-align: right;
+	line-height: 1px;
 }
 .flagicon{
 	width: 4.5rem;
@@ -172,8 +183,9 @@ p{
 	width: 100%;
 	box-sizing: border-box;
 }
-#landing{
-	height: 100vh;
+.flex{
+	height: 60vh;
+	margin-top: 3rem;
 }
 footer{
 	background-color: #a0000080;
@@ -208,7 +220,7 @@ footer{
 	ul{
 		flex-direction: row;
 		width: calc( 100% - 12rem );
-		justify-content: space-between;
+		justify-content: space-around;
 		height: auto;
 		align-items: center;
 	}
@@ -257,7 +269,7 @@ footer{
 	ul{
 		flex-direction: row;
 		width: calc( 100% - 12rem );
-		justify-content: space-between;
+		justify-content: space-qround;
 		height: auto;
 		align-items: center;
 	}
