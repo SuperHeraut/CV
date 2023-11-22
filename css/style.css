@@ -17,20 +17,22 @@ body{
 }
 #homepage{
 	display: block;
-	height: 100vh;
+	height:100vh;
 	overflow: hidden;
 	box-sizing: border-box;
 }
 #homepage>main{
 	display: block;
-	height: 100%;
-	overflow: hidden;
+	height: auto;
 	box-sizing: border-box;
 }
 #starter{
 	height: 100%;
 	overflow: hidden;
 	box-sizing: border-box;
+}
+#jap{
+	font-family: 'Yu Gothic UI';
 }
 header{
 	background-color: #a0000080;
@@ -61,10 +63,24 @@ header{
 	text-transform: uppercase;
 	top: 0;
 	font-size: 1.5rem;
+	height: 93vh;
 }
 #starter>div{
 	justify-self: center;
 	margin: auto;
+	color: #fffc8080;
+	font-size: 5rem;
+	font-weight: 200;
+	transition-duration: 750ms;
+}
+#starter>div:hover{
+	color: #fffc80ff;
+	font-weight: 900;
+	text-shadow: #ffc000ff 0 0 7px;
+	transition-duration: 500ms;
+}
+#footinit{
+	height: 3vh;
 }
 nav{
 	display: flex;
@@ -172,6 +188,20 @@ footer{
 	#open,#close{
 		display: none;
 	}
+	#starter>div{
+		justify-self: center;
+		margin: auto;
+		color: #fffc8080;
+		font-size: 5rem;
+		font-weight: 200;
+		transition-duration: 750ms;
+	}
+	#starter>div:hover{
+		color: #fffc80ff;
+		font-weight: 900;
+		text-shadow: #ffc000ff 0 0 7px;
+		transition-duration: 500ms;
+	}
 	.menuresponsive{
 		display: flex;
 	}
@@ -209,6 +239,20 @@ footer{
 	}
 	.menuresponsive{
 		display: flex;
+	}
+	#starter>div{
+		justify-self: center;
+		margin: auto;
+		color: #fffc8080;
+		font-size: 5rem;
+		font-weight: 200;
+		transition-duration: 750ms;
+	}
+	#starter>div:hover{
+		color: #fffc80ff;
+		font-weight: 900;
+		text-shadow: #ffc000ff 0 0 7px;
+		transition-duration: 500ms;
 	}
 	ul{
 		flex-direction: row;
