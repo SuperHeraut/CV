@@ -1,0 +1,240 @@
+html{
+	font-family: Bahnschrift;
+	font-size: 16px;
+	color: #ffffffff;
+	cursor: url(../img/cursor.png), default;
+}
+body{
+	min-height: 100vh;
+	background-color: #101010ff;
+	background-image: url(../img/logo.svg);
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	background-attachment: fixed;
+	background-size: contain;
+	scroll-behavior: smooth;
+}
+#homepage{
+	display: block;
+	height: 100vh;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+#homepage>main{
+	display: block;
+	height: 100%;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+#starter{
+	height: 100%;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+header{
+	background-color: #a0000080;
+	backdrop-filter: blur(5px);
+	padding: 10px;
+	margin: 0 10px 10px 10px;
+	border-radius: 0 0 20px 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	position: sticky;
+	top: 0;
+	font-size: 1.5rem;
+}
+#starter{
+	background-color: #a0000080;
+	backdrop-filter: blur(5px);
+	padding: 10px;
+	margin: 10px;
+	border-radius:20px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: sticky;
+	text-align: center;
+	text-transform: uppercase;
+	top: 0;
+	font-size: 1.5rem;
+}
+#starter>div{
+	justify-self: center;
+	margin: auto;
+}
+nav{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+#open{
+	display: inline-block;
+	font-size: 3rem;
+	width: 100%;
+}
+#menu{
+	display: none;
+}
+.menuresponsive,#close{
+	display: none;
+}
+#menu:checked~.menuresponsive{
+	display: flex;
+}
+#menu:checked~#close{
+	display: block;
+}
+#menu:checked~#open{
+	display: none;
+}
+#close{
+	font-size: 2rem;
+	align-self: flex-end;
+	line-height: 0%;
+	position: relative;
+	bottom: 0.75rem;
+}
+ul{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	height: 25vh;
+	text-transform: uppercase;
+	font-stretch: semi-condensed;
+}
+li{
+	color: #fffc8080;
+	font-weight: 100;
+	font-stretch: semi-condensed;
+	transition-duration: 750ms;
+	font-size: 2rem;
+}
+li:active{
+color: #fffc80ff;
+font-weight: 700;
+text-shadow: #ffc000ff 0 0 7px;
+transition-duration: 500ms;
+}
+p{
+	padding: 5px 10px;
+}
+#languages{
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+	height: 10rem;
+}
+.titre{
+	font-size: 3rem;
+	font-stretch: semi-condensed;
+	font-weight: 900;
+	text-shadow: #ffffffff 0 0 7px;
+	color: #000000ff;
+}
+.flagicon{
+	width: 4.5rem;
+	height: 4.5rem;
+	border-radius: 50%;
+	overflow: hidden;
+    transition-duration: 250ms;
+}
+.flagicon:hover{
+	width: 4.5rem;
+	height: 4.5rem;
+	border-radius: 30%;
+	overflow: hidden;
+    transition-duration: 250ms;
+}
+.flagicon>img{
+	width: 100%;
+	box-sizing: border-box;
+}
+#landing{
+	height: 100vh;
+}
+footer{
+	background-color: #a0000080;
+	backdrop-filter: blur(5px);
+	padding: 10px;
+	margin:10px 10px 0 10px;
+	border-radius:20px 20px 0 0;
+	position: sticky;
+	bottom: 0;
+}
+@media screen and (min-width:768px) and (max-width:1079px){
+	#open,#close{
+		display: none;
+	}
+	.menuresponsive{
+		display: flex;
+	}
+	ul{
+		flex-direction: row;
+		width: calc( 100% - 12rem );
+		justify-content: space-between;
+		height: auto;
+		align-items: center;
+	}
+	#languages{
+		display: flex;
+		flex-direction: row;
+		justify-content:space-between;
+		width: 10rem;
+		height: fit-content;
+	}
+	li{
+		color: #fffc8080;
+		font-weight: 100;
+		font-stretch: condensed;
+		transition-duration: 750ms;
+		font-size: 2rem;
+	}
+	li:active{
+		color: #fffc80ff;
+		font-weight: 700;
+		text-shadow: #ffc000ff 0 0 7px;
+		transition-duration: 500ms;
+}
+}
+@media screen and (min-width:1080px){
+	#open,#close{
+		display: none;
+	}
+	.menuresponsive{
+		display: flex;
+	}
+	ul{
+		flex-direction: row;
+		width: calc( 100% - 12rem );
+		justify-content: space-between;
+		height: auto;
+		align-items: center;
+	}
+	#languages{
+		display: flex;
+		flex-direction: row;
+		justify-content:space-between;
+		width: 10rem;
+		height: fit-content;
+	}
+	li{
+		color: #fffc8080;
+		font-weight: 100;
+		font-stretch: condensed;
+		transition-duration: 750ms;
+		font-size: 2.5rem;
+	}
+	li:hover{
+		color: #fffc80ff;
+		font-weight: 700;
+		text-shadow: #ffc000ff 0 0 7px;
+		transition-duration: 500ms;
+}
+}
