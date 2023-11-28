@@ -212,17 +212,42 @@ h2{
 	margin: 1rem;
 }
 #prolink{
+	display: flex;
+	flex-direction: column;
+	position: relative;
 	height: 40vh;
 	background-color: #00000080;
 	backdrop-filter: blur(5px);
-	border-radius: 10%;
+	border-radius: 1.25rem;
 }
-#qr{
-	height: 80%;
+.qr{
+	height: 350px;
 	text-align: center;
-	padding: 5%;
 }
-#qr>img{
+#qroff{
+	display: block;
+	overflow: hidden;
+    transition-duration: 250ms;
+}
+#qron{
+	opacity: 0%;
+	overflow: hidden;
+    transition: opacity 2s;
+}
+.qr{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+#qroff:hover~#qron, #qron:hover{
+	overflow: hidden;
+	opacity: 100%;
+    transition: opacity 1s;
+}
+.qr>img{
 	height: 100%;
 }
 #linkedin{
@@ -322,7 +347,7 @@ footer{
 	ul{
 		flex-direction: row;
 		width: calc( 100% - 12rem );
-		justify-content: space-qround;
+		justify-content: space-around;
 		height: auto;
 		align-items: center;
 	}
