@@ -148,9 +148,15 @@ p{
 	justify-content:space-between;
 	height: 10rem;
 }
+main{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+}
 .titre{
 	padding: 1rem;
 	box-sizing: border-box;
+	width: 100vw;
 }
 #nom,#praenom{
 	font-size: 14.5vw;
@@ -218,36 +224,16 @@ h2{
 	height: 40vh;
 	background-color: #00000080;
 	backdrop-filter: blur(5px);
-	border-radius: 1.25rem;
 }
 .qr{
-	height: 350px;
-	text-align: center;
+	display: none;
 }
-#qroff{
+#linkdin{
 	display: block;
-	overflow: hidden;
-    transition-duration: 250ms;
+	text-align: center;
+	height: 300px;
 }
-#qron{
-	opacity: 0%;
-	overflow: hidden;
-    transition: opacity 2s;
-}
-.qr{
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-#qroff:hover~#qron, #qron:hover{
-	overflow: hidden;
-	opacity: 100%;
-    transition: opacity 1s;
-}
-.qr>img{
+#linkdin>img{
 	height: 100%;
 }
 #linkedin{
@@ -393,5 +379,59 @@ footer{
 		text-align: right;
 		line-height: 0;
 		margin: -20px 0 1rem;
+	}
+	.left{
+		width: 52.5%;
+		border-radius: 0 20px 20px 0;
+		text-align: center;
+	}
+	.right{
+		width: 46%;
+		border-radius: 20px 0 0 20px;
+		text-align: center;
+	}
+	#linkdin{
+		display: none;
+	}
+	.qr{
+		display: block;
+		height: 350px;
+		text-align: center;
+		margin: 0;
+		position: absolute;
+		top: 60%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	#qroff{
+		display: block;
+		overflow: hidden;
+		transition-duration: 250ms;
+	}
+	#qron{
+		opacity: 0%;
+		overflow: hidden;
+		transition: opacity 2s;
+	}
+	#qroff:hover~#qron, #qron:hover{
+		overflow: hidden;
+		opacity: 100%;
+		transition: opacity 1s;
+	}
+	.qr>img{
+		height: 90%;
+	}
+	#linkedin{
+		display: block;
+		text-align: center;
+		text-transform: uppercase;
+		margin: auto;
+		font-size: 1.5rem;
+		color: #fffcc0ff;
+		font-stretch: semi-condensed;
+		font-weight: 700;
+		font-style: italic;
+		text-shadow: #ffc000ff 0 0 7px;
+		margin: 1rem;
 	}
 }
