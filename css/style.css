@@ -214,14 +214,14 @@ h2{
 	text-align: center;
 	text-transform: uppercase;
 	margin: auto;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	color: #fffcc0ff;
 	font-weight: 700;
 	font-style: italic;
 	text-shadow: #ffc000ff 0 0 7px;
 	margin: 1rem;
 }
-#presentation{
+.presentation{
 	line-height: 3rem;
 	font-size: 2rem;
 }
@@ -236,13 +236,14 @@ h2{
 .qr{
 	display: none;
 }
-#linkdin, #pixiv{
+#linkdin, #pixv{
 	display: block;
 	text-align: center;
-	height: 300px;
+	margin: auto;
+	height: 100px;
 }
 #linkdin>a, #pixv>a{
-	height: 100%;
+	text-align: center;
 }
 #linkdin>a>img, #pixv>a>img{
 	height: 100%;
