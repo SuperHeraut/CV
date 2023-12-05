@@ -225,7 +225,7 @@ h2{
 	line-height: 3rem;
 	font-size: 2rem;
 }
-#prolink{
+.prolink{
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -236,18 +236,18 @@ h2{
 .qr{
 	display: none;
 }
-#linkdin{
+#linkdin, #pixiv{
 	display: block;
 	text-align: center;
 	height: 300px;
 }
-#linkdin>a{
+#linkdin>a, #pixv>a{
 	height: 100%;
 }
-#linkdin>a>img{
+#linkdin>a>img, #pixv>a>img{
 	height: 100%;
 }
-#linkedin{
+#linkedin, #pixiv{
 	display: block;
 	text-align: center;
 	text-transform: uppercase;
@@ -404,7 +404,7 @@ footer{
 		border-radius: 20px 0 0 20px;
 		text-align: center;
 	}
-	#linkdin{
+	#linkdin, #pixv{
 		display: none;
 	}
 	.qr{
@@ -417,17 +417,17 @@ footer{
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
-	#qroff{
+	.qroff{
 		display: block;
 		overflow: hidden;
 		transition-duration: 250ms;
 	}
-	#qron{
+	.qron{
 		opacity: 0%;
 		overflow: hidden;
 		transition: opacity 2s;
 	}
-	#qroff:hover~#qron, #qron:hover{
+	.qroff:hover~.qron, .qron:hover{
 		overflow: hidden;
 		opacity: 100%;
 		transition: opacity 1s;
