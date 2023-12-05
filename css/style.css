@@ -6,7 +6,7 @@ html{
 }
 body{
 	min-height: 100vh;
-	background-color: #181818ff;
+	background-color: #000000ff;
 	background-image: url(../img/logo.svg);
 	background-repeat: no-repeat;
 	background-position-x: center;
@@ -70,11 +70,11 @@ header{
 	justify-self: center;
 	margin: auto;
 	color: #fffc8080;
-	font-size: 5rem;
+	font-size: 10vw;
 	font-weight: 200;
 	transition-duration: 750ms;
 }
-#starter>div:hover{
+#starter>div{
 	color: #fffc80ff;
 	font-weight: 900;
 	text-shadow: #ffc000ff 0 0 7px;
@@ -241,7 +241,10 @@ h2{
 	text-align: center;
 	height: 300px;
 }
-#linkdin>img{
+#linkdin>a{
+	height: 100%;
+}
+#linkdin>a>img{
 	height: 100%;
 }
 #linkedin{
@@ -266,7 +269,7 @@ footer{
 	display: block;
 	width: calc(100vw - 20px);
 	box-sizing: border-box;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 }
 @media screen and (min-width:768px) and (max-width:1079px){
@@ -277,7 +280,7 @@ footer{
 		justify-self: center;
 		margin: auto;
 		color: #fffc8080;
-		font-size: 5rem;
+		font-size: 10vw;
 		font-weight: 200;
 		transition-duration: 750ms;
 	}
@@ -318,7 +321,7 @@ footer{
 		font-weight: 700;
 		text-shadow: #ffc000ff 0 0 7px;
 		transition-duration: 500ms;
-}
+	}
 }
 @media screen and (min-width:1080px){
 	#open,#close{
