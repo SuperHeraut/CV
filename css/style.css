@@ -192,6 +192,10 @@ main{
 	width: 100%;
 	box-sizing: border-box;
 }
+.flagicon>a>img{
+	width: 100%;
+	box-sizing: border-box;
+}
 section{
 	margin: 1rem 0;
 }
