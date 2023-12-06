@@ -158,6 +158,16 @@ main{
 	box-sizing: border-box;
 	width: 100vw;
 }
+.titre2{
+	display: block;
+	text-align: center;
+	width: 100vw;
+	font-size: 14.5vw;
+	font-stretch: semi-condensed;
+	font-weight: 900;
+	text-shadow: #ffffffff 0 0 7px;
+	color: #000000ff;
+}
 #nom,#praenom{
 	font-size: 14.5vw;
 	font-stretch: semi-condensed;
@@ -203,7 +213,9 @@ section{
 	margin-top: 3rem;
 	background-color: #000000a0;
 	backdrop-filter: blur(5px);
-	display: block;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	width: 100%;
 	padding: 1rem;
 	box-sizing: border-box;
@@ -211,6 +223,7 @@ section{
 }
 h2{
 	display: block;
+	width: 100%;
 	text-align: center;
 	text-transform: uppercase;
 	margin: auto;
@@ -224,6 +237,22 @@ h2{
 .presentation{
 	line-height: 3rem;
 	font-size: 2rem;
+}
+.centertext{
+	display: block;
+	text-align: center;
+}
+.righttext{
+	display: block;
+	width: 45%;
+	text-align: right;
+	align-self: flex-end;
+}
+.lefttext{
+	display: block;
+	width: 45%;
+	text-align: left;
+	align-self: flex-start;
 }
 .prolink{
 	display: flex;
@@ -396,14 +425,12 @@ footer{
 		margin: -20px 0 1rem;
 	}
 	.left{
-		width: 52.5%;
+		width: 48.5%;
 		border-radius: 0 20px 20px 0;
-		text-align: center;
 	}
 	.right{
-		width: 46%;
-		border-radius: 20px 0 0 20px;
-		text-align: center;
+		width: 48.5%;
+		border-radius:20px 0 0 20px;
 	}
 	#linkdin, #pixv{
 		display: none;
