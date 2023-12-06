@@ -242,17 +242,25 @@ h2{
 	display: block;
 	text-align: center;
 }
-.righttext{
-	display: block;
-	width: 45%;
-	text-align: right;
-	align-self: flex-end;
-}
 .lefttext{
 	display: block;
-	width: 45%;
+	width: fit-content;
 	text-align: left;
 	align-self: flex-start;
+	overflow: hidden;
+}
+.righttext{
+	display: block;
+	width: fit-content;
+	text-align: right;
+	align-self: flex-end;
+	overflow: hidden;
+}
+.skillbox{
+	height: 20vw;
+}
+.skillbox>img{
+	height: 100%;
 }
 .prolink{
 	display: flex;
