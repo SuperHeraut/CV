@@ -469,7 +469,7 @@ footer{
 		transition: opacity 1s;
 	}
 	.qr>img{
-		height: 90%;
+		height: 100%;
 	}
 	#linkedin{
 		display: block;
