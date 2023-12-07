@@ -227,7 +227,7 @@ h2{
 	text-align: center;
 	text-transform: uppercase;
 	margin: auto;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	color: #fffcc0ff;
 	font-weight: 700;
 	font-style: italic;
@@ -257,10 +257,11 @@ h2{
 	overflow: hidden;
 }
 .skillbox{
-	height: 20vw;
+	width: 25%;
+	max-width: 200px;
 }
 .skillbox>img{
-	height: 100%;
+	width: 100%;
 }
 .prolink{
 	display: flex;
