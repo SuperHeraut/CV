@@ -74,7 +74,7 @@ header{
 	font-weight: 200;
 	transition-duration: 750ms;
 }
-#starter>div{
+#starter>div:active{
 	color: #fffc80ff;
 	font-weight: 900;
 	text-shadow: #ffc000ff 0 0 7px;
@@ -237,6 +237,9 @@ h2{
 .presentation{
 	line-height: 3rem;
 	font-size: 2rem;
+}
+.presentation>img{
+	width: 100%;
 }
 .centertext{
 	display: block;
