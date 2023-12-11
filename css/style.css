@@ -158,6 +158,13 @@ main{
 	box-sizing: border-box;
 	width: 100vw;
 }
+.titre>img{
+
+	box-sizing: border-box;
+	width: 100%;
+	background-color: #000000a0;
+	backdrop-filter: blur(5px);
+}
 .titre2{
 	display: block;
 	text-align: center;
@@ -239,7 +246,7 @@ h2{
 	font-size: 2rem;
 }
 .presentation>img{
-	width: 100%;
+	width: 75%;
 }
 .centertext{
 	display: block;
