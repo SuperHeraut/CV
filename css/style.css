@@ -242,8 +242,8 @@ h2{
 	margin: 1rem;
 }
 .presentation{
-	line-height: 3rem;
 	font-size: 2rem;
+	line-height: 3rem;
 }
 .presentation>img{
 	width: 75%;
@@ -253,15 +253,17 @@ h2{
 	text-align: center;
 }
 .lefttext{
-	display: block;
+	display: inline-block;
 	width: fit-content;
+	max-width: 50%;
 	text-align: left;
 	align-self: flex-start;
 	overflow: hidden;
 }
 .righttext{
-	display: block;
+	display: inline-block;
 	width: fit-content;
+	max-width: 50%;
 	text-align: right;
 	align-self: flex-end;
 	overflow: hidden;
