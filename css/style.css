@@ -269,34 +269,45 @@ h2{
 .skillbox{
 	width: 25%;
 	max-width: 200px;
+	position: relative;
 }
-.skillbox>img{
+.skillbox>div{
+	width: 100%;
+	max-width: 200px;
+}
+.skillbox>div>img{
 	width: 100%;
 }
 .prolink{
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	height: 40vh;
+	height: fit-content;
 	background-color: #00000080;
 	backdrop-filter: blur(5px);
 }
-.qr{
+.skills{
+	display: flex;
+	background-color: #00000080;
+	backdrop-filter: blur(5px);
+	width: 100%;
+}
+.qr, .iconoff{
 	display: none;
 }
-#linkdin, #pixv{
+#linkdin, #pixv, #mail, #phone{
 	display: block;
 	text-align: center;
 	margin: auto;
 	height: 100px;
 }
-#linkdin>a, #pixv>a{
+#linkdin>a, #pixv>a, #mail>a, #phone>a{
 	text-align: center;
 }
-#linkdin>a>img, #pixv>a>img{
+#linkdin>a>img, #pixv>a>img, #mail>a>img, #phone>a>img{
 	height: 100%;
 }
-#linkedin, #pixiv{
+.link{
 	display: block;
 	text-align: center;
 	text-transform: uppercase;
@@ -414,7 +425,7 @@ footer{
 		transition-duration: 750ms;
 		font-size: 2.5rem;
 	}
-	li:hover{
+	li:hover,#readpage{
 		color: #fffc80ff;
 		font-weight: 700;
 		text-shadow: #ffc000ff 0 0 7px;
@@ -451,12 +462,24 @@ footer{
 		width: 48.5%;
 		border-radius:20px 0 0 20px;
 	}
-	#linkdin, #pixv{
+	.prolink{
+		height: 45vh;
+	}
+	#linkdin, #pixv, #mail, #phone{
 		display: none;
 	}
 	.qr{
 		display: block;
 		height: 350px;
+		text-align: center;
+		margin: 0;
+		position: absolute;
+		top: 55%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.icon{
+		display: block;
 		text-align: center;
 		margin: 0;
 		position: absolute;
@@ -479,10 +502,26 @@ footer{
 		opacity: 100%;
 		transition: opacity 1s;
 	}
-	.qr>img{
+	.iconoff{
+		display: block;
+		overflow: hidden;
+		transition-duration: 250ms;
+		position: relative;
+	}
+	.iconon{
+		opacity: 0%;
+		overflow: hidden;
+		transition: opacity 2s;
+	}
+	.iconoff:hover~.iconon, .iconon:hover{
+		overflow: hidden;
+		opacity: 100%;
+		transition: opacity 1s;
+	}
+	.qr>img, .qr>a, .qr>a>img, .skillbox>div{
 		height: 100%;
 	}
-	#linkedin{
+	.link{
 		display: block;
 		text-align: center;
 		text-transform: uppercase;
