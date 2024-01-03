@@ -1,3 +1,7 @@
+@font-face {
+	font-family: ZenMaruGothic;
+	src: url(../font/ZenMaruGothic/ZenMaruGothic-Regular.ttf);
+}
 html{
 	font-family: Bahnschrift;
 	font-size: 16px;
@@ -150,7 +154,7 @@ li:active{
 	margin: 1rem;
 }
 .jtext{
-	font-family: 'Zen Maru Gothic';
+	font-family: 'ZenMaruGothic';
 	font-stretch: normal;
 	font-style: normal;
 }
@@ -161,7 +165,7 @@ p{
 	display: flex;
 	flex-direction: column;
 	justify-content:space-between;
-	height: 10rem;c 
+	height: 10rem; 
 }
 main{
 	display: flex;
