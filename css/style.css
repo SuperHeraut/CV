@@ -280,11 +280,7 @@ h2{
 	overflow: hidden;
 }
 .righttext{
-	display: inline-block;
-	width: fit-content;
-	max-width: 50%;
 	text-align: right;
-	align-self: flex-end;
 	overflow: hidden;
 }
 .skillbox{

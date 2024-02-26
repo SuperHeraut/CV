@@ -1,8 +1,0 @@
-{
-    "editor.parameterHints.enabled": true,
-    "editor.parameterHints.cycle": false,
-    "editor.inlineSuggest.enabled": false,
-    "editor.quickSuggestionsDelay": 100,
-    "editor.screenReaderAnnounceInlineSuggestion": false,
-    "editor.snippetSuggestions": "none"
-}
