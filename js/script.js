@@ -33,12 +33,11 @@ function analog() {
     secsHand.style.transform = `rotate(${secsDegs}deg)`;
     secsDot.style.transform = `rotate(${secsDotDegs}deg)`;
 
-    const minsDegs = ((minute / 60) * 360) + ((seconde/60)*6) + 90;
-    const minsDotDegs = (minsDegs * -1);
+    const minsDegs = ((minute / 60) * 360) + ((seconde / 60) * 6) + ((millisec / 60000) * 6) + 90;    const minsDotDegs = (minsDegs * -1);
     minsHand.style.transform = `rotate(${minsDegs}deg)`;
     minsDot.style.transform = `rotate(${minsDotDegs}deg)`;
 
-    const hourDegs = ((heure / 12) * 360) + ((minute/60)*30) + 90;
+    const hourDegs = ((heure / 12) * 360) + ((minute/60)*30) + ((seconde / 3600)*30) + 90;
     const hourDotDegs = (hourDegs * -1);
     hourHand.style.transform = `rotate(${hourDegs}deg)`;
     hourDot.style.transform = `rotate(${hourDotDegs}deg)`;

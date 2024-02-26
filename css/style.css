@@ -336,6 +336,131 @@ footer{
 	position: fixed;
 	bottom: 0;
 }
+#datehour{
+    position: relative;
+    width: 100%;
+    margin: auto;
+	font-stretch: condensed;
+	font-weight: 700;
+}
+#horologium{
+    display: inline-block;
+    position: absolute;
+    transform-origin: center;
+    transform: translate(0, 200%);
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    margin: auto;
+    font-size: 4vh;
+    font-weight: 700;
+    text-shadow:0 0 5vh #ff1010ff;
+}
+.clock {
+    width: 90vh;
+    height: 90vh;
+    position: relative;
+    padding: 1vh;
+    border: 1vh solid #ffc0c0c0;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ff1010ff, inset 0 0 10px #ff1010ff;
+}
+#datehour>*{
+    color: #ffc0c0;
+    font-family: Bahnschrift
+}
+.zerosix{
+    background: #00000000;
+}
+#zero{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5%;
+    z-index: 0;
+    left: 49%;
+    top: 0%;
+}
+#three{
+    content: '';
+    position: absolute;
+    width: 5%;
+    height: 5px;
+    z-index: 0;
+    right: 0%;
+    bottom: 49%;
+}
+#six{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5%;
+    z-index: 0;
+    left: 49%;
+    bottom: 0%;
+}
+#nine{
+    content: '';
+    position: absolute;
+    width: 5%;
+    height: 5px;
+    z-index: 0;
+    left: 0%;
+    bottom: 49%;
+}
+.hand {
+    width: 50%;
+    right: 50%;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    border-radius: 6px;
+    transform: rotate(90deg);
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+.hand.hours {
+    width: 30%;
+    z-index: 3;
+    background: #00000000;
+}
+.hand.mins {
+    z-index: 4;
+    width: 40%;
+    background: #00000000;
+}
+.hand.secs {
+
+    z-index: 5;
+    background: #00000000;
+    width: 45%;
+}
+.dot {
+    content: '';
+    position: absolute;
+    background: #ff001a00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transform: translate(0, -50%);
+}
+.dot > span {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+#heure{
+    font-size: 2rem;
+    text-shadow:0 0 6vh #ff1010ff;
+}
+#minute{
+    font-size: 2rem;
+    text-shadow:0 0 3.5vh #ff1010ff;
+}
+#seconde{
+    font-size: 1rem;
+    text-shadow:0 0 2vh #ff1010ff;
+}
 @media screen and (min-width:768px) and (max-width:1079px){
 	#open,#close{
 		display: none;
@@ -465,6 +590,14 @@ footer{
 	.right{
 		width: 48.5%;
 		border-radius:20px 0 0 20px;
+	}	
+	#datehour{
+    	position: relative;
+	    width: 50%;
+	}
+	.clock {
+    	width: 300px;
+    	height: 300px;
 	}
 	.prolink{
 		height: 45vh;
