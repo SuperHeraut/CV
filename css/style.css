@@ -364,7 +364,7 @@ footer{
 	height: 300px;
     position: relative;
     padding: 1vh;
-    border: 1vh solid #ffc0c0c0;
+    border: 1vh solid #ffc0c0ff;
     border-radius: 50%;
     transform-origin: center;
     box-shadow: 0 0 10px #ff1010ff, inset 0 0 10px #ff1010ff;
@@ -592,6 +592,24 @@ footer{
 	.right{
 		width: 48.5%;
 		border-radius:20px 0 0 20px;
+	}
+	.flex{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		overflow: hidden;
+	}
+	.half{
+		width: 50%;
+		padding: 1rem;
+		box-sizing: border-box;
+		font-size: 1.4rem;
+	}
+	.full{
+		width: 100%;
+		padding: 1rem;
+		box-sizing: border-box;
+		font-size: 1.4rem;
 	}
 	.clock {
 	width: 300px;
