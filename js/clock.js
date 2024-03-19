@@ -2,12 +2,24 @@ function padWithLeadingZeros(num, totalLength) {
     return String(num).padStart(totalLength, '0');
 };
 
+let date;
+let annee;
+let mois;
+let jour;
+let hodie;
+let heure;
+let minute;
+let seconde;
+let millisec;
+let indexPix;
+
+
 function clock() {
-    let date = new Date();
-    let annee = date.getFullYear();
-    let mois = date.getMonth() + 1;
-    let jour = date.getDate();
-    let hodie = annee + "<br>" + padWithLeadingZeros(mois,2) + "/" + padWithLeadingZeros(jour,2);
+    date = new Date();
+    annee = date.getFullYear();
+    mois = date.getMonth() + 1;
+    jour = date.getDate();
+    hodie = annee + "<br>" + padWithLeadingZeros(mois,2) + "/" + padWithLeadingZeros(jour,2);
 
     document.getElementById("horologium").innerHTML = hodie;
     setTimeout(clock, 1);
@@ -50,3 +62,4 @@ function analog() {
 setInterval(analog, 1);
 
 analog()
+
