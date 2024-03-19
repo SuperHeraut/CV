@@ -8,6 +8,9 @@ html{
 	color: #ffffffff;
 	cursor: url(../img/cursor.png), default;
 }
+a{
+	cursor: url(../img/cursor.png), pointer;
+}
 body{
 	min-height: 100vh;
 	background-color: #000000ff;
@@ -236,7 +239,7 @@ section{
 	margin: 1rem 0;
 }
 .blur{
-	background-color: #000000a0;
+	background-color: #00000080;
 	backdrop-filter: blur(5px);
 }
 .right, .left{
@@ -305,12 +308,8 @@ h2{
 	width: 100%;
 }
 .prolink{
-	display: flex;
-	flex-direction: column;
 	position: relative;
 	height: fit-content;
-	background-color: #00000080;
-	backdrop-filter: blur(5px);
 }
 .skills{
 	display: flex;
@@ -321,16 +320,16 @@ h2{
 .qr, .iconoff{
 	display: none;
 }
-#linkdin, #pixv, #mail, #phone{
+#insta, #linkdin, #pixv, #mail, #phone{
 	display: block;
 	text-align: center;
 	margin: auto;
 	height: 100px;
 }
-#linkdin>a, #pixv>a, #mail>a, #phone>a{
+#insta>a, #linkdin>a, #pixv>a, #mail>a, #phone>a{
 	text-align: center;
 }
-#linkdin>a>img, #pixv>a>img, #mail>a>img, #phone>a>img{
+#insta>a>img, #linkdin>a>img, #pixv>a>img, #mail>a>img, #phone>a>img{
 	height: 100%;
 }
 footer{
@@ -463,6 +462,64 @@ footer{
 .arms>img{
     object-fit: contain;
 }
+#gallery{
+	/* display:none; */
+	position: fixed;
+    top: 68px;
+    left: 0;
+    width: calc(100% - 20px);
+	margin: 10px;
+    height: calc(100% - 124px);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+	box-sizing: border-box;
+	border-radius: 20px;
+}
+#gallery img{
+    max-width: 80%;
+    max-height: 60vh;
+}
+#closeGal{
+    position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	transition-duration: 750ms;
+}
+#closeGal:hover{
+	transition-duration: 500ms;
+}
+.arrowbox{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+	width: 50px;
+	height: 50px;
+}
+#leftGal{
+    left: 3%;
+}
+#rightGal{
+    right: 3%;
+}
+.arrow{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.arrowoff, #closeoff{
+	display: none;
+}
+.arrowon{
+	display: block;
+}
+.arrowoff, .arrowon{
+	transition-duration: 750ms;
+}
+
 @media screen and (min-width:768px) and (max-width:1079px){
 	#open,#close{
 		display: none;
@@ -513,7 +570,12 @@ footer{
 		text-shadow: #ffc000ff 0 0 7px;
 		transition-duration: 500ms;
 	}
+	#gallery{
+		top: 84px;
+		height: calc(100% - 140px);
 }
+}
+
 @media screen and (min-width:1080px){
 	#open,#close{
 		display: none;
@@ -622,7 +684,7 @@ footer{
 	.prolink{
 		height: 45vh;
 	}
-	#linkdin, #pixv, #mail, #phone{
+	#insta, #linkdin, #pixv, #mail, #phone{
 		display: none;
 	}
 	.qr{
@@ -694,5 +756,50 @@ footer{
 	.jtext{
 		font-stretch: normal;
 		font-style: normal;
+	}
+	#gallery{
+		top: 60px;
+		height: calc(100% - 114px);
+	}
+	.arrow{
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+	.arrowoff, .arrowon{
+		transition-duration: 750ms;
+		width: 100%;
+		height: 100%;
+	}
+	#closeoff, .arrowoff{
+		display: block;
+		overflow: hidden;
+		transition-duration: 250ms;
+		position: relative;
+	}
+	#closeon, .arrowon{
+		opacity: 0%;
+		display: block;
+		position: absolute;
+		transition: opacity 2s;
+		top: 0;
+	}
+	.arrowoff:hover~.arrowon, .arrowon:hover, #closeoff:hover~#closeon, #closeon:hover{
+		overflow: hidden;
+		opacity: 100%;
+		transition: opacity 1s;
+	}
+	.arrowbox{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 50px;
+		height: 50px;
+	}
+	#leftGal{
+		left: 3%;
+	}
+	#rightGal{
+		right: 3%;
 	}
 }
