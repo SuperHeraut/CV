@@ -181,7 +181,6 @@ main{
 	width: 100vw;
 }
 .titre>img{
-
 	box-sizing: border-box;
 	width: 100%;
 	background-color: #000000a0;
@@ -241,6 +240,7 @@ section{
 .blur{
 	background-color: #00000080;
 	backdrop-filter: blur(5px);
+	transition-duration: 750ms;
 }
 .right, .left{
 	margin-top: 3rem;
@@ -520,8 +520,9 @@ footer{
 	transition-duration: 750ms;
 }
 #gallery{
-	display: flex;
+	display: none;
 	flex-direction: column;
+	transition-duration: 750ms;
 }
 #galMainPic{
 	height: auto;

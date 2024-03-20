@@ -1,25 +1,21 @@
-function padWithLeadingZeros(num, totalLength) {
-    return String(num).padStart(totalLength, '0');
-};
+
 let indexPic = 0;
 const pic = document.querySelectorAll('#portfolio div img');
 const totalPic = pic.length;
 
-console.log(pic);
-console.log(totalPic);
-
 function openGallery(event){
-    if (event.target.tagName === "img") {
+    if (event.target.tagName === "IMG") {
         const clickIndex = Array.from(pic).indexOf(event.target);
         indexPic = clickIndex;
-        console.log(indexPic);
         updateGallery();
         document.getElementById("gallery").style.display = "flex";
+        setTimeout(openGallery,20000)
     }
 }
 
 function closeGallery(){
     document.getElementById("gallery").style.display = "none";
+
 }
 
 function changePic(direction) {
@@ -48,9 +44,9 @@ function updateGallery() {
         thumb.src = image.src;
         thumb.alt = `Thumbnail ${index + 1}`;
         thumb.classList.add("thumb");
-        thumb.addEventListener("click", () => updatePic(index));
+        thumb.addEventListener("click", () => updateMainPic(index));
         thumbCont.appendChild(thumb);
-        console.log(image);
+        thumb.src = image.src;
     });
 
     // Highlight the current thumbnail
