@@ -519,7 +519,21 @@ footer{
 .arrowoff, .arrowon{
 	transition-duration: 750ms;
 }
-
+#gallery{
+	display: flex;
+	flex-direction: column;
+}
+#galMainPic{
+	height: auto;
+}
+.thumb{
+	width: 100px;
+}
+.activeThumb{
+	border: #ffffffff 2px solid;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
 @media screen and (min-width:768px) and (max-width:1079px){
 	#open,#close{
 		display: none;
