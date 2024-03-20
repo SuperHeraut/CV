@@ -31,15 +31,91 @@
 		<label for="menu" id="close">✕</label>
 	</header>
 	<main>
-		<div class="titre">Portfolio</div>
-		<section class="flex">
-			<div class="flagicon">
-				<img src="../img/nihongo.svg" alt="日本語">
-				</div>
+		<div class="titre2">Portfolio</div>
+		<section class="flex blur" onclick="openGallery(event)" id="portfolio">
+			<div class="arms">
+				<img src="../img/portfolio/greaterarms.png" alt="">
+			</div>
+			<div class="flag">
+				<img src="../img/portfolio/couronne.png" alt="">
+			</div>
+			<div class="arms">
+				<img src="../img/portfolio/MM_arms.png" alt="">
+			</div>
+			<div class="flag">
+				<img src="../img/portfolio/Yamashiro.png" alt="">
+			</div>
+			<div class="arms">
+				<img src="../img/portfolio/FR.png" alt="">
+			</div>
+			<div class="flag">
+				<img src="../img/portfolio/France2.png" alt="">
+			</div>
+			<div class="flag">
+				<img src="../img/portfolio/pièces.png" alt="">
+			</div>
+			<div class="flag">
+				<img src="../img/portfolio/note.png" alt="">
+			</div>
+			<div class="flag">
+				<img src="../img/portfolio/Aki.png" alt="">
+			</div>
+			<div class="arms">
+				<img src="../img/portfolio/René_de_Birague.png" alt="">
+			</div>
+			<div class="flag">
+				<img src="../img/portfolio/Hitachi.png" alt="">
+			</div>
+			<div class="flag">
+				<img src="../img/portfolio/font.svg" alt="">
+			</div>
+			<div class="flag">
+				<img src="../img/portfolio/fonts.png" alt="">
+			</div>
+			<div class="arms">
+				<img src="../img/portfolio/textsample.png" alt="">
+			</div>
 		</section>
+
+		<div id="gallery" class="blur">
+
+			<div id="closeGal">
+				<img src="../img/close-off.svg" id="closeoff">
+				<img src="../img/close.svg" id="closeon" onclick="closeGallery()">
+			</div>
+
+			<img id="galMainPic" src="" alt="gallery pic">
+			<div id="thumbCont">
+			</div>
+
+			<div class="arrowbox" id="leftGal">
+				<div class="arrow">
+					<div class="arrowoff">
+						<img src="../img/leftarrow-off.svg" alt="prev">
+					</div>
+					<div class="arrowon">
+						<img src="../img/leftarrow.svg" alt="prev" onclick="changePic(-1)">
+					</div>
+				</div>
+			</div>
+
+			<div class="arrowbox" id="rightGal">
+				<div class="arrow">
+					<div class="arrowoff">
+						<img src="../img/rightarrow-off.svg" alt="next">
+					</div>
+					<div class="arrowon">
+						<img src="../img/rightarrow.svg" alt="next" onclick="changePic(1)">
+					</div>
+				</div>
+			</div>
+
+		</div>
 	</main>
+
 	<footer>
 		<div>GANTOIS S&eacute;bastien, 2023</div>
 	</footer>
+    <script src="../js/gallery.js"></script>
 </body>
 </html>
