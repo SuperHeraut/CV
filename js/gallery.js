@@ -32,13 +32,9 @@ function updateGallery() {
     const galMainPic = document.getElementById("galMainPic");
     const thumbCont = document.getElementById("thumbCont");
 
-    // Update the main lightbox image
     galMainPic.src = pic[indexPic].src;
-
-    // Clear existing thumbnails
     thumbCont.innerHTML = "";
 
-    // Add new thumbnails
     pic.forEach((image, index) => {
         const thumb = document.createElement("img");
         thumb.src = image.src;
@@ -49,7 +45,6 @@ function updateGallery() {
         thumb.src = image.src;
     });
 
-    // Highlight the current thumbnail
     const thumbnails = document.querySelectorAll(".thumb");
     thumbnails[indexPic].classList.add("activeThumb");
 }
@@ -59,7 +54,6 @@ function updateMainPic(index) {
     updateGallery();
 }
 
-// Add initial thumbnails
 updateGallery();
 
 document.addEventListener("keydown", function (e) {
@@ -71,5 +65,3 @@ document.addEventListener("keydown", function (e) {
         }
     }
 });
-
-// https://webdesign.tutsplus.com/build-an-interactive-image-gallery-with-html-css-and-javascript--cms-107881t
