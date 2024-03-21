@@ -22,10 +22,10 @@
             <div id="languages">
                 <div class="flagicon">
                     <a href="../fr/skills.html"><img src="../img/francais.svg" alt="FRAN&Ccedil;AIS"></a>
-                </div>
+                </div><!--
                 <div class="flagicon">
                     <a href="../ja/skills.html"><img src="../img/nihongo.svg" alt="日本語"></a>
-                </div>
+                </div>-->
             </div>
         </nav>
         <label for="menu" id="close">✕</label>
@@ -111,15 +111,10 @@
         </section>
         <section class="flex right">
             <h2>clock</h2>
+            <div class="flex">
             <div id="datehour">
                 <div class="clock">
-                    <span id="horologium"></span>
-                    <div class="zerosix">
-                        <div class="zerosix" id="zero"></div>
-                        <div class="zerosix" id="three"></div>
-                        <div class="zerosix" id="six"></div>
-                        <div class="zerosix" id="nine"></div>
-                    </div>
+                    <div id="horologium"></div>
                     <div class="hand hours">
                         <div class="dot">
                             <span id="heure"></span>
@@ -137,32 +132,26 @@
                     </div>
                 </div>
             </div>
+            </div>
             <h2>
                 soft skills
             </h2>
-            <div class="presentation lefttext">
-                creativity
-            </div>
-            <div class="presentation righttext">
-                comprehensiveness
-            </div>
-            <div class="presentation lefttext">
-                curiosity
-            </div>
-            <div class="presentation righttext">
-                ethics
-            </div>
-            <div class="presentation lefttext">
-                learning willingness
-            </div>
-            <div class="presentation righttext">
-                politeness
+            <div class="flex">
+                <div class="presentation left">
+                    creativity<br>
+                    curiosity<br>
+                    ethics
+                </div>
+                <div class="presentation right righttext">
+                    learning willingness<br>
+                    politeness
+                </div>
             </div>
         </section>
     </main>
     <footer>
         <div>&copy;GANTOIS S&eacute;bastien, 2023</div>
     </footer>
-    <script src="../js/script.js"></script>
+    <script src="../js/clock.js"></script>
 </body>
 </html>

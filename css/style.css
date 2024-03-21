@@ -213,15 +213,15 @@ main{
 	margin: -1.5vw 0 1rem;
 }
 .flagicon{
-	width: 4.5rem;
-	height: 4.5rem;
+	width: 4rem;
+	height: 4rem;
 	border-radius: 50%;
 	overflow: hidden;
     transition-duration: 250ms;
 }
 .flagicon:hover{
-	width: 4.5rem;
-	height: 4.5rem;
+	width: 4rem;
+	height: 4rem;
 	border-radius: 30%;
 	overflow: hidden;
     transition-duration: 250ms;
@@ -773,8 +773,8 @@ footer{
 		font-style: normal;
 	}
 	#gallery{
-		top: 60px;
-		height: calc(100% - 114px);
+		top: 84px;
+		height: calc(100% - 140px);
 	}
 	.arrow{
 		position: relative;
