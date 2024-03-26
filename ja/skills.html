@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -11,30 +11,30 @@
     <header>
         <input type="checkbox" id="menu">
         <label for="menu" id="open">☰</label>
-        <nav class="menuresponsive">
+        <nav class="menuresponsive jtext">
             <ul>
-                <li><a href="introduction.html">pr&eacute;sentation</a></li>
-                <li><a href="history.html">parcours</a></li>
-                <li id="readpage">comp&eacute;tences</li>
-                <li><a href="portfolio.html">portfolio</a></li>
-                <li><a href="contact.html">contact</a></li>
+                <li><a href="introduction.html">自己㏚</a></li>
+                <li><a href="history.html">履歴</a></li>
+                <li id="readpage">特技</li>
+                <li><a href="portfolio.html">作品集</a></li>
+                <li><a href="contact.html">連絡</a></li>
             </ul>
             <div id="languages">
                 <div class="flagicon">
-                    <a href="../en/skills.html"><img src="../img/english.svg" alt="ENGLISH"></a>
+                    <a href="../fr/skills.html"><img src="../img/francais.svg" alt="FRAN&Ccedil;AIS"></a>
                 </div>
                 <div class="flagicon">
-                    <a href="../ja/skills.html"><img src="../img/nihongo.svg" alt="日本語"></a>
+                    <a href="../en/skills.html"><img src="../img/english.svg" alt="ENGLISH"></a>
                 </div>
             </div>
         </nav>
         <label for="menu" id="close">✕</label>
     </header>
     <main>
-        <div class="titre2">comp&eacute;tences</div>
-        <section class="flex left skills">
+        <h2 class="titre2 jtext straight">特技</h2>
+        <section class="flex left skills jtext blur">
             <h2>
-                comp&eacute;tences informatiques
+                デジタルスキル
             </h2>
             <div class="skillbox">
                 <div class="icon iconoff">
@@ -109,32 +109,50 @@
                 </div>
             </div>
         </section>
-        <section class="flex right">
+        <section class="right blur jtext" id="flex1">
+        <div class="flex">
+            <h2>自作の時計</h2>
+            <div class="flex">
+            <div id="datehour">
+                <div class="clock">
+                    <div id="horologium"></div>
+                    <div class="hand hours">
+                        <div class="dot">
+                            <span id="heure"></span>
+                        </div>
+                    </div>
+                    <div class="hand mins">
+                        <div class="dot">
+                            <span id="minute"></span>
+                        </div>
+                    </div>
+                    <div class="hand secs">
+                        <div class="dot">
+                            <span id="seconde"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
             <h2>
-                soft skills
+                ソフトスキル
             </h2>
-            <div class="presentation lefttext">
-                cr&eacute;ativit&eacute;
-            </div>
-            <div class="presentation righttext">
-                &eacute;coute attentive
-            </div>
-            <div class="presentation lefttext">
-                curiosit&eacute;
-            </div>
-            <div class="presentation righttext">
-                &eacute;thique
-            </div>
-            <div class="presentation lefttext">
-                volont&eacute; d&apos;apprendre
-            </div>
-            <div class="presentation righttext">
-                politesse
+            <div class="flex jtext" id="skillist">
+                <div class="presentation vert">
+                    発想力<br><br>
+                    習欲<br><br>
+                    好奇心<br><br>
+                    倫理<br><br>
+                    聴聞力<br><br>
+                    礼儀
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div>GANTOIS S&eacute;bastien, 2023</div>
+    <footer class="jtext">
+        <div>&copy; ガントヮ・セバスチャン　㋿<span class="normtext">5</span>年</div>
     </footer>
+    <script src="../js/clock.js"></script>
 </body>
 </html>
