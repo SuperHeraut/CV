@@ -247,7 +247,6 @@ section{
 	transition-duration: 750ms;
 }
 .right, .left{
-	margin-top: 3rem;
 	height: fit-content;
 	width: 100%;
 }
@@ -302,6 +301,7 @@ h2{
 .vert{
 	writing-mode: vertical-rl;
 	text-orientation: upright;
+	text-align: left;
 }
 .skillbox{
 	width: 25%;
@@ -310,6 +310,7 @@ h2{
 }
 #skillist{
 	justify-content: space-around;
+	font-size: 2rem;
 }
 #flex1{
 	margin-bottom: 48px;
@@ -549,6 +550,9 @@ footer{
 }
 #thumbCont{
 	display: none;
+}
+#dlpapercv{
+	margin-top: 60px;
 }
 @media screen and (min-width:768px) and (max-width:1079px){
 	#open,#close{
@@ -862,5 +866,8 @@ footer{
 		max-height: 100%;
 		width: auto;
 		margin: 0 5px;
+	}
+	#dlpapercv{
+		margin-top: 60px;
 	}
 }
