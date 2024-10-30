@@ -2,6 +2,10 @@
 	font-family: ZenMaruGothic;
 	src: url(../font/ZenMaruGothic/ZenMaruGothic-Regular.ttf);
 }
+@font-face {
+	font-family: Bahnschrift;
+	src: url(../font/Bahnschrift/bahnschrift.ttf);
+}
 html{
 	font-family: Bahnschrift;
 	font-size: 16px;
