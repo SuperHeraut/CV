@@ -166,6 +166,10 @@ li:active {
 	text-shadow: #ffc000ff 0 0 7px;
 	margin: 1rem;
 }
+.redirect {
+	color: #fffcc0ff;
+	font-weight: 700;
+	text-shadow: #ffc000ff 0 0 7px;}
 .jtext {
 	font-family: 'ZenMaruGothic';
 }
@@ -580,6 +584,19 @@ footer {
 }
 #dlpapercv {
 	margin-top: 60px;
+}
+@media screen and (min-width:768px) {
+	.redirect {
+		color: #fffc8080;
+		font-weight: 300;
+		transition-duration: 750ms;
+	}
+	.redirect:hover {
+		color: #fffc80ff;
+		font-weight: 700;
+		text-shadow: #ffc000ff 0 0 7px;
+		transition-duration: 500ms;
+	}
 }
 @media screen and (min-width:768px) and (max-width:1079px) {
 	#open,
